@@ -57,18 +57,3 @@ ctest --output-on-failure
 
 12 test cases cover the hex formatting logic, pattern parsing (both `text:` and `hex:` forms,
 including malformed input), substring search, and real file I/O round-tripping.
-
-## Architecture
-
-See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the component breakdown and reasoning
-behind key design decisions.
-
-## Project status / Roadmap
-
-Active portfolio project. Tracked as GitHub Issues:
-- [ ] `--offset`/`--length` flags to dump a byte range instead of the whole file
-- [ ] Colourised output highlighting matched search patterns within the hex view
-- [ ] Faster search algorithm (Boyer-Moore or similar) if larger files become a real use case
-
-## License
-MIT — see [LICENSE](LICENSE).
