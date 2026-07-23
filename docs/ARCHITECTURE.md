@@ -15,13 +15,12 @@
 
 ## Why this shape
 
-Same principle as the other two portfolio projects: **pure, testable logic separated from I/O
-and CLI plumbing.** `hex_formatter.cpp` and `searcher.cpp` have zero dependency on the
+ `hex_formatter.cpp` and `searcher.cpp` have zero dependency on the
 filesystem, so almost the entire test suite runs with no file I/O at all — the one exception
 being `test_read_file_end_to_end`, which deliberately writes and reads back a small temp file
 to prove the file-reading path works against real file I/O, not just in-memory data.
 
-## Known limitations (honest, not hidden)
+## Known limitations 
 
 - Whole-file read only — no streaming for very large files.
 - Search is a naive O(n·m) substring scan, not a fast string-matching algorithm
@@ -30,7 +29,7 @@ to prove the file-reading path works against real file I/O, not just in-memory d
 - No colourised terminal output — plain text only, to keep the tool portable across terminals
   and easy to redirect/pipe.
 
-## Natural next steps (tracked as GitHub Issues)
+## Natural next steps 
 
 - Support reading a byte range (`--offset`/`--length`) instead of always dumping the whole file
 - Colourised output for matched search patterns within the hex dump view
