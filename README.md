@@ -5,9 +5,7 @@ A small command-line hex dump and binary search tool, written in C++17 — like 
 
 ## Why this exists
 
-This is a fourth piece of a portfolio set alongside [ADSentry](../adsentry) (Python, identity
-security), [NetScope](../netscope) (Python, network traffic analysis), and [MiniVM](../minivm)
-(C++, bytecode interpreter). Where MiniVM demonstrates interpreter/VM design, HexPeek is a
+ HexPeek is a
 smaller, more everyday systems tool — the kind of thing genuinely useful when inspecting an
 unfamiliar file, and a natural companion to reverse-engineering-adjacent work, where looking at
 raw bytes is a routine first step.
